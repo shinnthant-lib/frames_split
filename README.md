@@ -1,2 +1,4 @@
 # frames_split
- Frame Spliting with Specific Frame Count
+ Create Conda Environment With environmental.yml
+ Change video path
+ Change frames path

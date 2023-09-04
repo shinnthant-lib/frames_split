@@ -20,4 +20,4 @@ dependencies:
   - pip:
       - numpy==1.25.2
       - opencv-python==4.8.0.76
-prefix: C:\Users\Senzi\miniconda3\envs\helper
+
