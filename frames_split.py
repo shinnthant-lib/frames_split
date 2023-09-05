@@ -34,7 +34,7 @@ while success:
             frame = np.transpose(frame, [1, 0, 2])
         frame = cv2.resize(frame, (1024, 1024))
         
-        frame_path=os.path.join(frames_dir,f"{str(frame_c).zfill(0)}.jpg")
+        frame_path=os.path.join(frames_dir,f"{str(frame_c).zfill(4)}.jpg")
         cv2.imwrite(frame_path,frame)
         frame_c += 1
         countdown=0
