@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+
 def fill_frame(frame):
     h, w = frame.shape[0], frame.shape[1]
     if h > w:
