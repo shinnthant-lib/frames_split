@@ -1,12 +1,13 @@
 import cv2 
 import os
 import numpy as np
+from autorotation import autorotation
 
 
 
 
-video_path=os.path.join("video","vic.mp4")
-frames_dir="frames"
+video_path=os.path.join("video","IMG_5290.mov")
+frames_dir="frames_c"
 
 
 vidcap = cv2.VideoCapture(video_path)
@@ -23,7 +24,10 @@ countdown=1
 
 success,frame = vidcap.read()
 while success:
+    
+    
     if countdown==capframe:
+        # print(vidcap.getBackendName())
         h, w = frame.shape[0], frame.shape[1]
         if h > w:
             _pad = np.zeros([h, int((h - w) / 2), 3])
@@ -42,3 +46,4 @@ while success:
         countdown+=1
     success,frame = vidcap.read()
 
+vidcap.release()
